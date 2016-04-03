@@ -1,20 +1,21 @@
-﻿# ChatApp
-
-
-
+﻿# GROUP CHAT MEAN 
 
 MONGODB, ANGULARJS, ExpressJS, NODE
 
-# MONGODB - Storing the users and their Groups.
+# MONGODB 
+Storing the users and their Groups.
 
-# AngularJS - Front end users login, signup and dashboard pafs as CHAT
+# AngularJS 
+Front end users login, signup and dashboard pafs as CHAT
 
-# ExpressJS - Routing of backend  services and default options.
+# ExpressJS 
+Routing of backend  services and default options.
 
-# NODE - Backend server running on node.
+# NODE 
+Backend server running on node.
 
 
-Please follow the steps to work
+# Please follow the steps to work
 
 Step 1(MONGODB) : 
 
