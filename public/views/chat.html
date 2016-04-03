@@ -1,0 +1,37 @@
+﻿<div class="row bgwhite margin-15">
+    <div class="container">
+        <div class="col-lg-8">
+            <h1>MEAN</h1>
+            
+        </div>
+        <div class="col-lg-4 text-right padding-lr">
+            <div><a class="btn btn-link text-underline" href="#/edituser/{{userDetails._id}}">Edit Profile</a>
+            <a class="btn btn-link text-underline" ng-click="logoutClick()">Logout</a></div>
+            <div>Welcome <span class="h4">{{userDetails.firstname+ " " + userDetails.lastname}} </span></div>
+        </div>
+    </div>
+</div>
+
+<div class="col-sm-offset-2 col-lg-8">
+
+    <div class="row"><span class="chatlinkBtn" ng-show="visibleChatBtn" ng-click="visibleChatClick()">CHAT with Group({{userDetails.group}}) members</span></div>
+    <div class="chatContainer" ng-show="chatContainerVisible">
+        chart Group - <span class="h4">{{userDetails.group}}</span> <a ng-click="closeChat()" class="closeChatLink glyphicon glyphicon-remove pull-right"></a>
+        <div class="row chatMsgArea">
+            <div class="row margin-lr" ng-repeat="messages in messageUsersList">
+                <span class="col-lg-4">{{messages.username}}</span>
+                <span class="col-lg-8">{{messages.userInput}}</span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 padding-lr">
+                <input type="text" class="form-control" placeholder="Enter your message" ng-model="chat.input">
+            </div>
+            <div class="col-lg-4 padding-right0">
+                <button type="button" class="btn btn-primary btn-md btn-block " ng-click="chatEnterClick()">Enter</button>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,149 @@
+﻿body
+{
+    background:url("../../images/bgImg2.jpg") repeat;
+}
+.loginArea, .signupArea
+{
+    background:#FFF;
+    padding:20px;
+    border-top:15px solid #03cbd8;
+}
+.container{
+    background:white;
+}
+.padding15
+{
+    padding:15px;
+}
+.padding-lr
+{
+    padding:0px !important;
+}
+.padding-left5
+{
+    padding-left:5px !important;
+}
+.padding-left10
+{
+    padding-left:10px !important;
+}
+.padding-left15
+{
+    padding-left:15px !important;
+}
+.padding-right0
+{
+    padding-right:0px !important;
+}
+.padding-right5
+{
+    padding-right:5px !important;
+}
+.padding-right10
+{
+    padding-right:10px !important;
+}
+.padding-right15
+{
+    padding-right:15px !important;
+}
+.margin-lr
+{
+    margin:0px !important;
+}
+.margin-left5
+{
+    margin-left:5px !important;
+}
+.margin-left10
+{
+    margin-left:10px !important;
+}
+.margin-left15
+{
+    margin-left:15px !important;
+}
+.margin-right5
+{
+    margin-right:5px !important;
+}
+.margin-right10
+{
+    margin-right:10px !important;
+}
+.margin-right15
+{
+    margin-right:15px !important;
+}
+.margin-15
+{
+    margin-left:-15px !important;
+    margin-right:-15px !important;
+}
+.row
+{
+    margin:0px;
+}
+.border-right
+{
+    border-right:1px solid #DDD;
+}
+.signupArea .form-group
+{
+    margin:10px;
+    display:flex;
+}
+
+.chatContainer
+{
+    background:#fff; 
+    position:fixed;
+    right:0px;
+    bottom:0px;
+    width:400px;
+    padding:10px;
+}
+
+.chatMsgArea
+{
+    height:280px;
+    overflow-y:auto;
+    border-top:1px solid #b7b7b7;
+    padding-top:10px;
+    margin-bottom:10px;
+}
+.chatMsgArea span.col-lg-4{
+    color:#4cff00;
+    font-style:italic;
+}
+.chatlinkBtn
+{
+    padding:10px;
+    color:#00750a;
+    background:#4cff00;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    width:300px;
+    position:fixed;
+    right:0;
+    bottom:0px;
+    cursor:pointer;
+    text-align:center;
+}
+.closeChatLink
+{
+    cursor:pointer;
+}
+.bgwhite
+{
+    background:#FFF;
+}
+
+.errorTxt p
+{
+    color:#a94442;
+    padding:5px;
+}
+
+
+
