@@ -1,17 +1,29 @@
-﻿<div class="row bgwhite margin-15">
-    <div class="container">
+<div class="row bgwhiteOpacity margin-15">
+    <div class="container bgwhiteOpacity">
         <div class="col-lg-8">
             <h1>MEAN</h1>
-            
+
         </div>
         <div class="col-lg-4 text-right padding-lr">
-            <div><a class="btn btn-link text-underline" href="#/edituser/{{userDetails._id}}">Edit Profile</a>
-            <a class="btn btn-link text-underline" ng-click="logoutClick()">Logout</a></div>
+            <div>
+                <a class="btn btn-link text-underline" href="#/edituser/{{userDetails._id}}">Edit Profile</a>
+                <a class="btn btn-link text-underline" ng-click="logoutClick()">Logout</a>
+            </div>
             <div>Welcome <span class="h4">{{userDetails.firstname+ " " + userDetails.lastname}} </span></div>
         </div>
     </div>
 </div>
+<div class="container chatContentArea">
+    <div class="col-lg-4 groupUserContainer">
+        <h4>List of Users</h4>
+        <div class="row guContentArea">
+           
+        </div>
+    </div>
+    <div class="col-lg-8"></div>
 
+
+</div>
 <div class="col-sm-offset-2 col-lg-8">
 
     <div class="row"><span class="chatlinkBtn" ng-show="visibleChatBtn" ng-click="visibleChatClick()">CHAT with Group({{userDetails.group}}) members</span></div>
