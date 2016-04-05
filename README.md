@@ -32,9 +32,8 @@ step2 (NODE) :
  - In command console type npm install
  - Now you are dependecies are loaded including SOCKET module.
  - Go to the console and run node server.js
- - Now your server is running.
+ - Now you can see your server is running.
 
-
-Play and have FUN. enjoy:)
+ 
 
 
