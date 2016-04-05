@@ -1,4 +1,4 @@
-﻿body
+body
 {
     background:url("../../images/bgImg2.jpg") repeat;
 }
@@ -138,12 +138,37 @@
 {
     background:#FFF;
 }
-
+.bgwhiteOpacity
+{
+    background:rgba(255,255,255,0.8);
+}
 .errorTxt p
 {
     color:#a94442;
     padding:5px;
 }
-
-
-
+.groupUserContainer
+{
+    margin-top:20px;
+    background:#DDD;
+    padding:0px;
+    padding-bottom:0px;
+} 
+    .groupUserContainer h4
+    {
+        background:#68c400;
+        padding:20px;
+        margin:0px; 
+    }
+    .groupUserContainer .guContentArea{
+        border:1px solid #808080;
+        padding:20px;
+    }
+        .groupUserContainer .guContentArea ul 
+        {
+            margin-left:25px;
+        }
+        .chatContentArea{
+            min-height:500px;
+            background: rgba(0, 0, 0, 0.7) !important;
+        }
