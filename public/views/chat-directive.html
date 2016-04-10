@@ -1,0 +1,37 @@
+
+<div class="row"  ng-show="(tabsGroup.length == 0)">
+  <p class="welcomeTxt">
+      Welcome to MEAN CHAT Application
+  </p>
+</div>
+
+
+<div class="chatDirectiveContainer" ng-show="(tabsGroup.length > 0)">
+    <!-- <h1>CHAT</h1> -->
+    <tabs>
+      <pane ng-repeat="user in tabsGroup | filter : {username : '!'+userDetails.username}" title="{{user.fullname}}" >
+          <div class="row">
+            <p class="userInfoText">{{user.fullname}}</p>
+            <div class="row userChatMsgArea">
+                <div class="row margin-lr" ng-repeat="messages in chatMessageList">
+                    <div ng-if="(messages.toSenderName == userDetails.username || messages.userId == userDetails._id)">
+                        <div ng-if="(messages.userId == user._id || messages.toSenderId == user._id)">
+                            <span class="col-lg-4 usernameTxt" ng-class="{'currentUsernameTxt' :messages.userId == userDetails._id }">{{messages.userFullname}}</span>
+                            <span class="col-lg-8">{{messages.userInput}}</span>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 padding-lr">
+                    <input type="text" class="form-control" placeholder="Enter your message" ng-model="chatuser.input">
+                </div>
+                <div class="col-lg-4 padding-right0">
+                    <button type="button" class="btn btn-primary btn-md btn-block " ng-click="userChatClick(user._id, user.username, user.fullname)">Enter</button>
+                </div>
+            </div>
+          </div>
+        </pane>
+    </tabs>
+
+</div>

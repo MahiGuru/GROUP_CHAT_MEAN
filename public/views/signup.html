@@ -1,0 +1,118 @@
+﻿<div class="row">
+    <!-- <pre>{{register}}</pre>-->
+    <form name="registerForm" novalidation>
+        <div class="col-lg-offset-3 col-lg-5 signupArea">
+            <h2 class="text-center margin-lr">SIGNUP</h2>
+            <br />
+
+            <div class="form-group"  ng-class="{ 'has-error' : registerForm.firstname.$invalid && isFormSubmit}">
+                <label for="exampleInputEmail1" class="col-lg-5 padding-lr">Name</label>
+                <div class="col-lg-4 padding-lr padding-right5">
+                    <input type="text" class="form-control" name="firstname" id="Email1" ng-model="register.firstname" placeholder="Firstname" required ng-minlength="2" ng-maxlength="15">
+                     <div ng-messages="registerForm.firstname.$error" ng-if="registerForm.firstname.$invalid && isFormSubmit " ng-class="{'errorTxt':registerForm.firstname.$invalid && isFormSubmit}"> 
+                        <p ng-message="minlength">Your Firstname is too short.</p>
+                        <p ng-message="maxlength">Your Firstname is too long.</p>
+                        <p ng-message="required">Your Firstname is required.</p> 
+                    </div> 
+                </div>
+                <span class="col-lg-3 padding-lr padding-left5" ng-class="{ 'has-error' : registerForm.lastname.$invalid && isFormSubmit}">
+                    <input type="text" class="form-control" name="lastname" id="Email6" ng-model="register.lastname" placeholder="LastName" required ng-minlength="2" ng-maxlength="15">
+                    <div ng-messages="registerForm.lastname.$error" ng-if="registerForm.lastname.$invalid && isFormSubmit " ng-class="{'errorTxt':registerForm.lastname.$invalid && isFormSubmit}"> 
+                        <p ng-message="minlength">Your Lastname is too short.</p>
+                        <p ng-message="maxlength">Your Lastname is too long.</p>
+                        <p ng-message="required">Your Lastname is required.</p> 
+                    </div> 
+
+                </span>
+            </div>
+            <div class="form-group" ng-class="{ 'has-error' : registerForm.username.$invalid && isFormSubmit}">
+                <label for="exampleInputEmail1" class="col-lg-5 padding-lr">Username</label>
+                <div class="col-lg-7 padding-lr">
+                    <input type="text" class="form-control" name="username" id="Email3" ng-model="register.username" placeholder="username" required ng-minlength="4" ng-maxlength="15">
+                    <div ng-messages="registerForm.username.$error" ng-if="registerForm.username.$invalid && isFormSubmit " ng-class="{'errorTxt':registerForm.username.$invalid && isFormSubmit}"> 
+                        <p ng-message="minlength">Your username is too short.</p>
+                        <p ng-message="maxlength">Your username is too long.</p>
+                        <p ng-message="required">Your username is required.</p> 
+                    </div> 
+
+                </div>
+            </div>
+            <div class="form-group" ng-class="{ 'has-error' : registerForm.password.$invalid && isFormSubmit}">
+                <label for="exampleInputEmail1" class="col-lg-5 padding-lr">Password</label>
+                <div class="col-lg-7 padding-lr">
+                    <input type="password" class="form-control" id="password" name="password" ng-model="register.password" placeholder="Password" required ng-minlength="5" ng-maxlength="15">
+                    <div ng-messages="registerForm.password.$error" ng-if="registerForm.password.$invalid && isFormSubmit " ng-class="{'errorTxt':registerForm.password.$invalid && isFormSubmit}"> 
+                        <p ng-message="minlength">Your Password is too short.</p>
+                        <p ng-message="maxlength">Your Password is too long.</p>
+                        <p ng-message="required">Your Password is required.</p> 
+                        
+                    </div> 
+                </div>
+            </div>
+            <div class="form-group" ng-class="{ 'has-error' : registerForm.confPassword.$invalid && isFormSubmit}">
+                <label for="exampleInputEmail1" class="col-lg-5 padding-lr">Confirm Password</label>
+                <div class="col-lg-7 padding-lr">
+                    <input type="password" class="form-control" name="confPassword" id="confpassword" ng-model="register.confpassword"  pw-check="password" placeholder="Confirm Password" required ng-minlength="5" ng-maxlength="15">
+                    <div ng-messages="registerForm.confPassword.$error" ng-if="registerForm.confPassword.$invalid && isFormSubmit " ng-class="{'errorTxt':registerForm.confPassword.$invalid && isFormSubmit}"> 
+                        <p ng-message="minlength">Your Confirm Password is too short.</p>
+                        <p ng-message="maxlength">Your Confirm Password is too long.</p>
+                        <p ng-message="required">Your Confirm Password is required.</p> 
+                        <p><span class="msg-error" ng-show="registerForm.confPassword.$error.pwmatch">
+                        Passwords don't match.
+                        </span></p>
+                    </div> 
+                </div>
+            </div>
+            <div class="form-group" ng-class="{ 'has-error' : registerForm.email.$invalid && isFormSubmit}">
+                <label for="exampleInputEmail1" class="col-lg-5 padding-lr">Email</label>
+                <div class="col-lg-7 padding-lr">
+                    <input type="email" class="form-control" id="Email4" name="email" ng-model="register.email" placeholder="Email" required>
+                    <div ng-messages="registerForm.email.$error" ng-if="registerForm.email.$invalid && isFormSubmit " ng-class="{'errorTxt':registerForm.email.$invalid && isFormSubmit}"> 
+                        <p ng-message="email">Your email is not valid</p>
+                        <p ng-message="required">Your username is required.</p> 
+                    </div> 
+                </div>
+            </div>
+            <div class="form-group" ng-class="{ 'has-error' : registerForm.group.$invalid && isFormSubmit}">
+                <label for="exampleInputEmail1" class="col-lg-5 padding-lr">Choose favourite Group</label>
+                <div class="col-lg-7 padding-lr">
+                    <label class="radio-inline">
+                        <input type="radio" name="group" id="inlineRadio1" value="classic" ng-model="register.group" required>
+                        Classic
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="group" id="inlineRadio2" value="rock" ng-model="register.group" required>
+                        Rock
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="group" id="inlineRadio3" value="pop" ng-model="register.group" required>
+                        Pop
+                    </label>
+                    <div ng-messages="registerForm.group.$error" ng-if="registerForm.group.$invalid && isFormSubmit " ng-class="{'errorTxt':registerForm.group.$invalid && isFormSubmit}"> 
+                         
+                        <p ng-message="required">Your Group is required.</p> 
+                    </div> 
+                </div>
+            </div>
+            <div class="form-group" ng-class="{ 'has-error' : registerForm.nationality.$invalid && isFormSubmit}">
+                <label for="exampleInputPassword1" class="col-lg-5 padding-lr">Nationality</label>
+                <div class="col-lg-7 padding-lr">
+                    <input type="text" class="form-control" name="nationality" id="password" ng-model="register.nationality" placeholder="Nationality" required >
+                     <div ng-messages="registerForm.nationality.$error" ng-if="registerForm.nationality.$invalid && isFormSubmit " ng-class="{'errorTxt':registerForm.nationality.$invalid && isFormSubmit}"> 
+                         
+                        <p ng-message="required">Your Nationality is required.</p> 
+                    </div> 
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-lg-12 padding-lr">
+                    <p>Back to <a href="#/" class="btn btn-link text-underline">login</a> here</p>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-Primary pull-right" ng-click="registerClick()">Register</button>
+
+
+        </div>
+    </form>
+</div>

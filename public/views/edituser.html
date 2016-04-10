@@ -1,0 +1,60 @@
+﻿<div class="row">
+       <!-- <pre>{{register}}</pre> -->
+    <div class="col-lg-offset-3 col-lg-5 signupArea">
+        <h2 class="text-center margin-lr">USER Information</h2>
+        <br />
+
+        <div class="form-group">
+            <label for="exampleInputEmail1" class="col-lg-5 padding-lr">Name</label>
+            <span class="col-lg-4 padding-lr padding-right5"><input type="text" class="form-control" id="Email1" ng-model="register.firstname" placeholder="Firstname"></span>
+             <span class="col-lg-3 padding-lr padding-left5"><input type="text" class="form-control" id="Email6" ng-model="register.lastname" placeholder="LastName"></span>
+        </div> 
+        <div class="form-group">
+            <label for="exampleInputEmail1" class="col-lg-5 padding-lr">Username</label>
+            <div class="col-lg-7 padding-lr"><span>{{register.username}}</span></div>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1" class="col-lg-5 padding-lr">Old Password</label>
+            <div class="col-lg-7 padding-lr"><input type="password" class="form-control" id="Password1" ng-model="register.oldPassword" placeholder="Password"></div>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1" class="col-lg-5 padding-lr">New Password</label>
+            <div class="col-lg-7 padding-lr"><input type="password" class="form-control" id="username" ng-model="register.password" placeholder="New Password"></div>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1" class="col-lg-5 padding-lr">New Confirm Password</label>
+            <div class="col-lg-7 padding-lr"><input type="password" class="form-control" id="Email5" ng-model="register.confpassword" placeholder="New Confirm Password"></div>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1" class="col-lg-5 padding-lr">Email</label>
+            <div class="col-lg-7 padding-lr"><input type="text" class="form-control" id="Email4" ng-model="register.email" placeholder="Email"></div>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1" class="col-lg-5 padding-lr">Choose favourite Group</label>
+            <div class="col-lg-7 padding-lr">
+                <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="classic" ng-model="register.group" >
+                    Classic
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="rock" ng-model="register.group" >
+                    Rock
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="pop" ng-model="register.group" >
+                    Pop
+                </label>
+
+            </div>
+        </div> 
+        <div class="form-group">
+            <label for="exampleInputPassword1" class="col-lg-5 padding-lr">Nationality</label>
+            <div class="col-lg-7 padding-lr"><input type="text" class="form-control" id="password" ng-model="register.nationality" placeholder="Nationality"></div>
+        </div> 
+         <div class="row text-right">
+        <button type="submit" class="btn btn-default" ng-click="cancelClick()">Cancel</button>
+        <button type="submit" class="btn btn-Primary" ng-click="updateInfo()">Update</button> 
+        </div>
+
+    </div>
+</div>

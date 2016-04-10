@@ -1,0 +1,36 @@
+﻿<div class="row">
+    <div class="col-lg-offset-4 col-lg-4 loginArea">
+        <h2 class="text-center">SIGN IN</h2>
+        <br />
+        <form name="userForm" novalidation> 
+             
+            <div class="form-group"  ng-class="{ 'has-error' : userForm.username.$invalid && isFormSubmit}" >
+                <label for="username">Username</label>
+                <input type="text" class="form-control" name="username" id="username" ng-model="user.username" placeholder="username" required  ng-minlength="2" ng-maxlength="15" > 
+                 <div ng-messages="userForm.username.$error" ng-if="userForm.username.$invalid && isFormSubmit " ng-class="{'errorTxt':userForm.username.$invalid && isFormSubmit}"> 
+                    <p ng-message="minlength">Your username is too short.</p>
+                    <p ng-message="maxlength">Your username is too long.</p>
+                    <p ng-message="required">Your username is required.</p> 
+                </div> 
+            </div>
+            <div class="form-group"  ng-class="{ 'has-error' : userForm.password.$invalid && isFormSubmit }">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name="password" id="password" ng-model="user.password" required placeholder="Password" ng-minlength="5" ng-maxlength="10">
+                <div ng-messages="userForm.password.$error" ng-if="userForm.password.$invalid && isFormSubmit"  ng-class="{'errorTxt':userForm.password.$invalid && isFormSubmit}">
+                    <p ng-message="minlength">Your password is too short.</p>
+                    <p ng-message="maxlength">Your password is too long.</p>
+                    <p ng-message="required">Your password is required.</p>
+                </div> 
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox">
+                    Remember password
+                </label>
+            </div>
+            <p class="bg-danger col-lg-12">{{loginErr}}</p>
+            <button type="submit" class="btn btn-Primary pull-right" ng-click="loginClick()">Login</button>
+            <p>Aren't you registered yet, <a href="#/signup" class="btn btn-link">signup</a> here </p>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,254 @@
+﻿body
+{
+    background:url("../../images/bgImg2.jpg") repeat;
+}
+.loginArea, .signupArea
+{
+    background:#FFF;
+    padding:20px;
+    border-top:15px solid #03cbd8;
+}
+.container{
+    background:white;
+}
+.padding15
+{
+    padding:15px;
+}
+.padding-lr
+{
+    padding:0px !important;
+}
+.padding-left5
+{
+    padding-left:5px !important;
+}
+.padding-left10
+{
+    padding-left:10px !important;
+}
+.padding-left15
+{
+    padding-left:15px !important;
+}
+.padding-right0
+{
+    padding-right:0px !important;
+}
+.padding-right5
+{
+    padding-right:5px !important;
+}
+.padding-right10
+{
+    padding-right:10px !important;
+}
+.padding-right15
+{
+    padding-right:15px !important;
+}
+.margin-lr
+{
+    margin:0px !important;
+}
+.margin-left5
+{
+    margin-left:5px !important;
+}
+.margin-left10
+{
+    margin-left:10px !important;
+}
+.margin-left15
+{
+    margin-left:15px !important;
+}
+.margin-right5
+{
+    margin-right:5px !important;
+}
+.margin-right10
+{
+    margin-right:10px !important;
+}
+.margin-right15
+{
+    margin-right:15px !important;
+}
+.margin-15
+{
+    margin-left:-15px !important;
+    margin-right:-15px !important;
+}
+.row
+{
+    margin:0px;
+}
+.border-right
+{
+    border-right:1px solid #DDD;
+}
+.signupArea .form-group
+{
+    margin:10px;
+    display:flex;
+}
+
+.chatContainer
+{
+    background:#fff;
+    position:fixed;
+    right:0px;
+    bottom:0px;
+    width:400px;
+    padding:10px;
+}
+
+.chatMsgArea
+{
+    height:280px;
+    overflow-y:auto;
+    border-top:1px solid #b7b7b7;
+    padding-top:10px;
+    margin-bottom:10px;
+}
+.chatMsgArea span.col-lg-4{
+    color:#4cff00;
+    font-style:italic;
+}
+.chatlinkBtn
+{
+    padding:10px;
+    color:#00750a;
+    background:#4cff00;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    width:300px;
+    position:fixed;
+    right:0;
+    bottom:0px;
+    cursor:pointer;
+    text-align:center;
+}
+.closeChatLink
+{
+    cursor:pointer;
+}
+.bgwhite
+{
+    background:#FFF;
+}
+.bgwhiteOpacity
+{
+    background:rgba(255,255,255,0.8);
+}
+.errorTxt p
+{
+    color:#a94442;
+    padding:5px;
+}
+.groupUserContainer
+{
+    margin-top:20px;
+    background:#DDD;
+    padding:0px;
+    padding-bottom:0px;
+}
+    .groupUserContainer h4
+    {
+        background:#68c400;
+        padding:20px;
+        margin:0px;
+    }
+    .groupUserContainer .guContentArea{
+        border:1px solid #808080;
+        padding:20px;
+    }
+        .groupUserContainer .guContentArea ul
+        {
+            margin-left:25px;
+        }
+.groupUserContainer .guContentArea ul li{
+    clear:both;
+    border-bottom:1px solid #333;
+    list-style: none;
+    padding:10px;
+}
+
+.groupUserContainer .guContentArea ul li.hasMessage{
+  background-color: #89FF52;
+}
+.userChatMsgArea{
+  height:280px;
+  overflow-y: auto;
+  margin-bottom:15px;
+}
+.chatContentArea{
+            min-height:500px;
+            background: rgba(0, 0, 0, 0.7) !important;
+        }
+.chatDirectiveContainer {
+
+    margin-top:20px;
+}
+.chatDirectiveContainer .tab-content{
+    background:rgba(124,101,85, 0.6);
+    border-top:1px solid #FFF;
+    color: #FFF;
+}
+.chatDirectiveContainer .nav-tabs{
+  border:none;
+}
+.chatDirectiveContainer .userChatBoxPane{
+  padding-right:45px;
+
+}
+.chatDirectiveContainer .closeUserChatBox{
+  padding: 10px;
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+.userInfoText{
+  padding:15px;
+  font-style: italic;
+}
+.online{
+  font-style: italic;
+  color:#19A800;
+  font-size: 11px;
+}
+.offline{
+  font-style: italic;
+  color:#666;
+  font-size: 11px;
+}
+.chatDirectiveHeading{
+font-style: italic;
+color: #666;
+padding:25px;
+
+}
+.welcomeTxt{
+  padding:20px;
+  font-size: 38px;
+  color:#999;
+  margin-top: 105px;
+  font-style: italic;
+}
+.counterMsg{
+  padding:5px 10px;
+  background-color: #c3c3c3;
+  border-radius:45px;
+  -webkit-border-radius:45px;
+  margin-left:5px;
+}
+.usernameTxt{
+  color:#999;
+  font-weight: bold;
+  font-style: italic;
+  padding-bottom:10px;
+}
+.currentUsernameTxt{
+  color:#19A800;
+}
